@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Code, MonitorSmartphone, TrendingUp, Cpu, Award } from 'lucide-react';
+import abateImg from '../assets/abate.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -96,7 +97,7 @@ const Home = () => {
                     <h2 className="section-title">Meet The <span>Team</span></h2>
                     <div className="team-grid">
                         <div className="glass-card team-card">
-                            <img src="/src/assets/abate.jpg" className="team-avatar ab" style={{ objectFit: "cover", objectPosition: "top", width: "100px", height: "100px", borderRadius: "50%", marginBottom: "1.5rem" }} alt="Abate Alemu" />
+                            <img src={abateImg} className="team-avatar ab" style={{ objectFit: "cover", objectPosition: "top", width: "100px", height: "100px", borderRadius: "50%", marginBottom: "1.5rem" }} alt="Abate Alemu" />
                             <h3>Abate Alemu</h3>
                             <p className="team-role">Founder & CEO / Lead Developer</p>
                             <p className="team-bio">Web developer passionate about helping companies grow digitally through modern websites and smart technology.</p>

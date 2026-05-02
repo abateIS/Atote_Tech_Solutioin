@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, Code, MonitorSmartphone, TrendingUp, Cpu, Award } from 'lucide-react';
 import abateImg from '../assets/abate.jpg';
+import bezaImg from '../assets/beza.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -104,7 +105,7 @@ const Home = () => {
                         </div>
 
                         <div className="glass-card team-card">
-                            <div className="team-avatar be">B</div>
+                            <img src={bezaImg} className="team-avatar be" style={{ objectFit: "cover", objectPosition: "top", width: "100px", height: "100px", borderRadius: "50%", marginBottom: "1.5rem" }} alt="Bezawit Haile" />
                             <h3>Bezawit Haile</h3>
                             <p className="team-role">Social Media & Operations Manager</p>
                             <p className="team-bio">Handles communication, brand growth, and social presence. Ensures smooth operations.</p>

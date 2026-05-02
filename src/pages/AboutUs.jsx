@@ -1,6 +1,7 @@
 import React from 'react';
 import { Target, Lightbulb, Users } from 'lucide-react';
 import abateImg from '../assets/abate.jpg';
+import bezaImg from '../assets/beza.jpg';
 
 const AboutUs = () => {
     return (
@@ -61,7 +62,7 @@ const AboutUs = () => {
                             <p style={{ color: 'var(--color-light-gray)', fontSize: '0.95rem' }}>A passionate web developer helping companies grow digitally.</p>
                         </div>
                         <div className="glass-card" style={{ flex: '1 1 300px', minWidth: '300px' }}>
-                            <img src={abateImg} alt="Abate Alemu" style={{ width: "80px", height: "80px", borderRadius: "50%", objectFit: "cover", objectPosition: "top", marginBottom: "1rem" }} />
+                            <img src={bezaImg} alt="Bezawit Haile" style={{ width: "80px", height: "80px", borderRadius: "50%", objectFit: "cover", objectPosition: "top", marginBottom: "1rem" }} />
                             <h3>Bezawit Haile</h3>
                             <p style={{ color: 'var(--color-purple-light)', marginBottom: '1rem', fontWeight: '500' }}>Social Media & Operations Manager</p>
                             <p style={{ color: 'var(--color-light-gray)', fontSize: '0.95rem' }}>The driving force behind communication, brand growth, and operations.</p>

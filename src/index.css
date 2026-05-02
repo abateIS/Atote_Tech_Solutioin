@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-dark-blue: #1A1305;
+  /* Dim Gold Background */
+  --color-secondary-blue: #2A1D08;
+  /* Slightly lighter dim gold */
+  --color-light-blue: #3A2B12;
+  --color-white: #CCD6F6;
+  --color-pure-white: #FFFFFF;
+  --color-purple-accent: #64FFDA;
+  /* We will use a neon teal/cyan for a modern tech look initially, but wait, the instructions ask for Purple Accent. Let's use #8A2BE2 or #9D4EDD */
+  --color-purple: #9D4EDD;
+  --color-purple-light: #C77DFF;
+  --color-gold: #F5B041;
+  --color-gold-light: #FFD700;
+  --color-light-gray: #8892B0;
+
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+  color: var(--color-pure-white);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-purple-light);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-inter);
+}
+
+/* Reusable Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-title span {
+  color: var(--color-purple-light);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all var(--transition-normal);
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-purple), var(--color-purple-light));
+  color: var(--color-pure-white);
+  box-shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(157, 78, 221, 0.5);
+  color: var(--color-pure-white);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-purple-light);
+  border: 2px solid var(--color-purple-light);
+}
+
+.btn-outline:hover {
+  background: rgba(199, 125, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  border-color: rgba(157, 78, 221, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

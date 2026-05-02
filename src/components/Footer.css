@@ -1,0 +1,124 @@
+.footer {
+    background-color: var(--color-secondary-blue);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 4rem 0 2rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-brand .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.footer-brand .footer-logo img {
+    height: 48px;
+    border-radius: 8px;
+}
+
+.footer-desc {
+    color: var(--color-light-gray);
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(100, 255, 218, 0.05);
+    /* very faint teal/purple */
+    background: rgba(157, 78, 221, 0.1);
+    color: var(--color-white);
+    transition: all var(--transition-normal);
+}
+
+.social-icon:hover {
+    background: var(--color-purple);
+    color: var(--color-pure-white);
+    transform: translateY(-3px);
+}
+
+.footer-title {
+    color: var(--color-pure-white);
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--color-light-gray);
+}
+
+.footer-links a:hover {
+    color: var(--color-purple-light);
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+    color: var(--color-light-gray);
+}
+
+.contact-item svg {
+    color: var(--color-purple-light);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--color-light-gray);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-desc {
+        margin: 0 auto 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+}

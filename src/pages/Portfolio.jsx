@@ -7,7 +7,7 @@ const Portfolio = () => {
             category: 'Advance Website (Upcoming)',
             title: 'Walk-Addis',
             desc: 'A comprehensive touring and event website for discovering Ethiopia. Currently in active development and launching soon.',
-            image: 'https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Addis_in_night.jpg/960px-Addis_in_night.jpg'
         },
         {
             category: 'Portal System',

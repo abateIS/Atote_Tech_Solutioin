@@ -4,6 +4,12 @@ import { ExternalLink } from 'lucide-react';
 const Portfolio = () => {
     const projects = [
         {
+            category: 'Advance Website (Upcoming)',
+            title: 'Walk-Addis',
+            desc: 'A comprehensive touring and event website for discovering Ethiopia. Currently in active development and launching soon.',
+            image: 'https://images.unsplash.com/photo-1534430252179-c5c2fc95f9c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+        },
+        {
             category: 'Portal System',
             title: 'Scripture Union of Ethiopia',
             desc: 'A robust and secure portal system developed to streamline internal operations and data management.',
